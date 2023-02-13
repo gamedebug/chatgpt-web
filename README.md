@@ -1,7 +1,7 @@
 # chatgpt-web
-[![Release](https://img.shields.io/github/v/release/869413421/chatgpt-web.svg?style=flat-square)](https://github.com/869413421/wechatbot/releases/tag/v1.1.3)
-![Github stars](https://img.shields.io/github/stars/869413421/chatgpt-web.svg)
-![Forks](https://img.shields.io/github/forks/869413421/chatgpt-web.svg?style=flat-square)
+[![Release](https://img.shields.io/github/v/release/gamedebug/chatgpt-web.svg?style=flat-square)](https://github.com/gamedebug/wechatbot/releases/tag/v1.1.3)
+![Github stars](https://img.shields.io/github/stars/gamedebug/chatgpt-web.svg)
+![Forks](https://img.shields.io/github/forks/gamedebug/chatgpt-web.svg?style=flat-square)
 > 本项目可以一键部署属于自己定制化的 chatgpt web程序，
 > 只需下载release中对应平台的项目文件，修改配置后执行，打开 http://127.0.0.1:8080 ，便可以获得属于自己的chatgpt网站。
 > 
@@ -30,7 +30,7 @@
 
 `第一种：直接下载二进制(适合对编程不了解的同学)`
 
-> 非技术人员请直接下载release中的[压缩包](https://github.com/869413421/chatgpt-web/releases) ，请根据自己系统以及架构选择合适的压缩包，下载之后直接解压运行。
+> 非技术人员请直接下载release中的[压缩包](https://github.com/gamedebug/chatgpt-web/releases) ，请根据自己系统以及架构选择合适的压缩包，下载之后直接解压运行。
 
 下载之后，在本地解压，即可看到可执行程序，与配置文件：
 
@@ -56,7 +56,7 @@ $ tail -f run.log
 
 ````
 # 获取项目
-$ git clone https://github.com/869413421/chatgpt-web.git
+$ git clone https://github.com/gamedebug/chatgpt-web.git
 
 # 进入项目目录
 $ cd chatgpt-web
@@ -83,7 +83,7 @@ $ docker run -itd --name chatgpt-web --restart=always \
  -e FREQ=0.0 \
  -e PRES=0.6 \
  -p 8080:8080 \
- qingshui869413421/chatgpt-web:latest
+ qingshuigamedebug/chatgpt-web:latest
 ```
 
 运行命令中映射的配置文件参考下边的配置文件说明。
@@ -95,7 +95,7 @@ $ docker run -itd --name chatgpt-web --restart=always \
 $ cp config.dev.json config.json  # 其中 config.dev.json 从项目的根目录获取
 
 # 运行项目
-$ docker run -itd --name chatgpt-web -v `pwd`/config.json:/app/config.json -p 8080:8080 qingshui869413421/chatgpt-web:latest
+$ docker run -itd --name chatgpt-web -v `pwd`/config.json:/app/config.json -p 8080:8080 qingshuigamedebug/chatgpt-web:latest
 ```
 
 其中配置文件参考下边的配置文件说明。
